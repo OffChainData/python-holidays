@@ -228,10 +228,10 @@ def createHolidaySum(h1, h2):
     return HolidaySum
 
 
-def CountryHoliday(country, years=[], prov=None, state=None):
+def CountryHoliday(country, years=[], prov=None, state=None, expand = True):
     try:
         country_holiday = globals()[country](years=years,
-                                             prov=prov, state=state)
+                                             prov=prov, state=state, expand=expand)
     except (KeyError):
         raise KeyError("Country %s not available" % country)
     return country_holiday
