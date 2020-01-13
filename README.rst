@@ -108,10 +108,12 @@ Brazil              BR       state = AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT,
 Bulgaria            BG       None
 Canada              CA       prov = AB, BC, MB, NB, NL, NS, NT, NU, **ON** (default),
                              PE, QC, SK, YU
+Chile               CL       None
 Colombia            CO       None
 Croatia             HR       None
 Czechia             CZ       None
 Denmark             DK       None
+Dominican Republic  DO       None
 England                      None
 Estonia             EE       None
 EuropeanCentralBank ECB,TAR  Trans-European Automated Real-time Gross Settlement (TARGET2)
@@ -122,6 +124,8 @@ France              FRA      **Métropole** (default), Alsace-Moselle, Guadeloup
                              Wallis-et-Futuna
 Germany             DE       prov = BW, BY, BE, BB, HB, HH, HE, MV, NI, NW, RP, SL, SN,
                              ST, SH, TH
+HongKong            HK       None
+Honduras            HND      None
 Hungary             HU       None
 Iceland             IS       None
 India               IND      prov = AS, SK, CG, KA, GJ, BR, RJ, OD, TN, AP, WB, KL, HR,
@@ -139,6 +143,8 @@ Mexico              MX       None
 Netherlands         NL       None
 NewZealand          NZ       prov = NTL, AUK, TKI, HKB, WGN, MBH, NSN, CAN, STC, WTL,
                              OTA, STL, CIT
+Nicaragua           NI       prov = MN
+Nigeria             NG       None
 Northern Ireland             None
 Norway              NO       None
 Peru                PE       None
@@ -302,11 +308,11 @@ More Examples
     >>> date(2012, 1, 1) in us_holidays
     True
     >>> us_holidays[date(2012, 1, 1)]
-    "New Year's Eve"
+    "New Year's Day"
     >>> date(2012, 1, 2) in us_holidays
     True
     >>> us_holidays.get(date(2012 ,1, 2))
-    "New Year's Eve (Observed)"
+    "New Year's Day (Observed)"
 
     # The `observed` and `expand` values can both be changed on the fly and the
     # holiday list will be adjusted accordingly
